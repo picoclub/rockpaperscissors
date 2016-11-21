@@ -7,6 +7,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<h1>you are ready to go! :)</h1>
+	
+
+	<header class="header">
+		<h1 class="header__title">Rock - Paper - Scissors <small>(- Lizard - Spoke)</small></h1>
+		
+		<div class="header__input">
+			<label for="gameType">Please pick a game</label>
+			<select id="gameType">
+				<option value="HvC">Human vs Computer</option>
+				<option value="CvC">Computer vs Computer</option>
+			</select>
+		</div>
+		<div class="header__input" id="score"></div>
+	</header>
+
+	<div id="computer-game" class="game">
+		<button>Play a game</button>
+	</div>
+
+	<div id="human-game" class="game">
+		<input class="humanChoiceEntries is-hidden" type= "radio" name="weapon" value="0" id="scissors"><label for="scissors">✌️</label>
+		<input class="humanChoiceEntries is-hidden" type= "radio" name="weapon" value="1"  id="paper"><label for="paper">✋</label>
+		<input class="humanChoiceEntries is-hidden" type= "radio" name="weapon" value="2" id="rock"><label for="rock">👊</label>
+		<input class="humanChoiceEntries is-hidden" type= "radio" name="weapon" value="3" id="lizard"><label for="lizard">🦎</label>
+		<input class="humanChoiceEntries is-hidden" type= "radio" name="weapon" value="4" id="spoke"><label for="spoke">🖖</label>
+	</div>
+
+	<div class="info" id="match"></div>
+	<div class="info" id="result"></div>
+
+
+	<div class="info" id="reset">
+		<button>Reset</button>
+	</div>
+
+
 </body>
 </html>
